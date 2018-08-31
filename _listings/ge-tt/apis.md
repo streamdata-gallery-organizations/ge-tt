@@ -7,190 +7,205 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1012-ge-tt
 x-kinRank: "8"
 x-alexaRank: "36546"
 tags: Ge.tt
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-30"
+modified: "2018-08-30"
 url: https://raw.githubusercontent.com/streamdata-gallery-organizations/ge-tt/master/_listings/ge-tt/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Ge.tt  REST API Files Create
-  x-api-slug: ge-tt--rest-api
+- name: Ge.tt  REST API - Files Create
+  x-api-slug: 1filessharenamecreate-post
   description: 'To upload files to Ge.tt you must first create the file under a given
     share. You do that by posting the filename:'
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1012-ge-tt.jpg
   humanURL: http://ge.tt
-  baseURL: https://open.ge.tt//1//1/files/{sharename}/create
-  tags: Files,Sharename,Create
+  baseURL: https://open.ge.tt//1
+  tags: Files, Storage, File Transfer, File Sharing, File, Stack Network, Getting
+    Started Example, Mobile, Technology, internet, API Provider, Profiles, Relative
+    Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/ge-tt/master/_listings/ge-tt/1filessharenamecreate-post-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/ge-tt/master/_listings/ge-tt/1filessharenamecreate-post-openapi.md
-- name: Ge.tt  REST API Files
-  x-api-slug: ge-tt--rest-api
+- name: Ge.tt  REST API - Files
+  x-api-slug: 1filessharenamefileid-get
   description: 'Get the state of a file. This returns the following data:'
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1012-ge-tt.jpg
   humanURL: http://ge.tt
-  baseURL: https://open.ge.tt//1//1/files/{sharename}/{fileid}
-  tags: Files,Sharename,Fileid
+  baseURL: https://open.ge.tt//1
+  tags: Files, Storage, File Transfer, File Sharing, File, Stack Network, Getting
+    Started Example, Mobile, Technology, internet, API Provider, Profiles, Relative
+    Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/ge-tt/master/_listings/ge-tt/1filessharenamefileid-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/ge-tt/master/_listings/ge-tt/1filessharenamefileid-get-openapi.md
-- name: Ge.tt  REST API Files  Blob
-  x-api-slug: ge-tt--rest-api
+- name: Ge.tt  REST API - Files  Blob
+  x-api-slug: 1filessharenamefileidblob-get
   description: Will redirect to the binary content of the file
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1012-ge-tt.jpg
   humanURL: http://ge.tt
-  baseURL: https://open.ge.tt//1//1/files/{sharename}/{fileid}/blob
-  tags: Files,Sharename,Fileid,Blob
+  baseURL: https://open.ge.tt//1
+  tags: Files, Storage, File Transfer, File Sharing, File, Stack Network, Getting
+    Started Example, Mobile, Technology, internet, API Provider, Profiles, Relative
+    Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/ge-tt/master/_listings/ge-tt/1filessharenamefileidblob-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/ge-tt/master/_listings/ge-tt/1filessharenamefileidblob-get-openapi.md
-- name: Ge.tt  REST API Files  Blob Thumb
-  x-api-slug: ge-tt--rest-api
+- name: Ge.tt  REST API - Files  Blob Thumb
+  x-api-slug: 1filessharenamefileidblobthumb-get
   description: Will redirect to a thumbnail of the binary file. Currently only available
     for images.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1012-ge-tt.jpg
   humanURL: http://ge.tt
-  baseURL: https://open.ge.tt//1//1/files/{sharename}/{fileid}/blob/thumb
-  tags: Files,Sharename,Fileid,Blob,Thumb
+  baseURL: https://open.ge.tt//1
+  tags: Files, Storage, File Transfer, File Sharing, File, Stack Network, Getting
+    Started Example, Mobile, Technology, internet, API Provider, Profiles, Relative
+    Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/ge-tt/master/_listings/ge-tt/1filessharenamefileidblobthumb-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/ge-tt/master/_listings/ge-tt/1filessharenamefileidblobthumb-get-openapi.md
-- name: Ge.tt  REST API Files  Destroy
-  x-api-slug: ge-tt--rest-api
+- name: Ge.tt  REST API - Files  Destroy
+  x-api-slug: 1filessharenamefileiddestroy-post
   description: Delete a file and the binary contents.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1012-ge-tt.jpg
   humanURL: http://ge.tt
-  baseURL: https://open.ge.tt//1//1/files/{sharename}/{fileid}/destroy
-  tags: Files,Sharename,Fileid,Destroy
+  baseURL: https://open.ge.tt//1
+  tags: Files, Storage, File Transfer, File Sharing, File, Stack Network, Getting
+    Started Example, Mobile, Technology, internet, API Provider, Profiles, Relative
+    Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/ge-tt/master/_listings/ge-tt/1filessharenamefileiddestroy-post-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/ge-tt/master/_listings/ge-tt/1filessharenamefileiddestroy-post-openapi.md
-- name: Ge.tt  REST API Files  Upload
-  x-api-slug: ge-tt--rest-api
+- name: Ge.tt  REST API - Files  Upload
+  x-api-slug: 1filessharenamefileidupload-get
   description: Get upload urls to the file. This returns a new PUT and POST url for
     you to upload the file to.nOBS You can also choose to use the put- or posturl
     that you were previously given to override the file.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1012-ge-tt.jpg
   humanURL: http://ge.tt
-  baseURL: https://open.ge.tt//1//1/files/{sharename}/{fileid}/upload
-  tags: Files,Sharename,Fileid,Upload
+  baseURL: https://open.ge.tt//1
+  tags: Files, Storage, File Transfer, File Sharing, File, Stack Network, Getting
+    Started Example, Mobile, Technology, internet, API Provider, Profiles, Relative
+    Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/ge-tt/master/_listings/ge-tt/1filessharenamefileidupload-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/ge-tt/master/_listings/ge-tt/1filessharenamefileidupload-get-openapi.md
-- name: Ge.tt  REST API Shares
-  x-api-slug: ge-tt--rest-api
+- name: Ge.tt  REST API - Shares
+  x-api-slug: 1shares-get
   description: 'Returns all your shares and the containing files:'
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1012-ge-tt.jpg
   humanURL: http://ge.tt
-  baseURL: https://open.ge.tt//1//1/shares
-  tags: Shares
+  baseURL: https://open.ge.tt//1
+  tags: Files, Storage, File Transfer, File Sharing, File, Stack Network, Getting
+    Started Example, Mobile, Technology, internet, API Provider, Profiles, Relative
+    Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/ge-tt/master/_listings/ge-tt/1shares-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/ge-tt/master/_listings/ge-tt/1shares-get-openapi.md
-- name: Ge.tt  REST API Shares Create
-  x-api-slug: ge-tt--rest-api
+- name: Ge.tt  REST API - Shares Create
+  x-api-slug: 1sharescreate-post
   description: 'Creates a new share. The request body is optional but can look like:'
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1012-ge-tt.jpg
   humanURL: http://ge.tt
-  baseURL: https://open.ge.tt//1//1/shares/create
-  tags: Shares,Create
+  baseURL: https://open.ge.tt//1
+  tags: Files, Storage, File Transfer, File Sharing, File, Stack Network, Getting
+    Started Example, Mobile, Technology, internet, API Provider, Profiles, Relative
+    Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/ge-tt/master/_listings/ge-tt/1sharescreate-post-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/ge-tt/master/_listings/ge-tt/1sharescreate-post-openapi.md
-- name: Ge.tt  REST API Shares
-  x-api-slug: ge-tt--rest-api
+- name: Ge.tt  REST API - Shares
+  x-api-slug: 1sharessharename-get
   description: Lists a share.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1012-ge-tt.jpg
   humanURL: http://ge.tt
-  baseURL: https://open.ge.tt//1//1/shares/{sharename}
-  tags: Shares,Sharename
+  baseURL: https://open.ge.tt//1
+  tags: Files, Storage, File Transfer, File Sharing, File, Stack Network, Getting
+    Started Example, Mobile, Technology, internet, API Provider, Profiles, Relative
+    Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/ge-tt/master/_listings/ge-tt/1sharessharename-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/ge-tt/master/_listings/ge-tt/1sharessharename-get-openapi.md
-- name: Ge.tt  REST API Shares Destroy
-  x-api-slug: ge-tt--rest-api
+- name: Ge.tt  REST API - Shares Destroy
+  x-api-slug: 1sharessharenamedestroy-post
   description: Delete a share and all of its files.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1012-ge-tt.jpg
   humanURL: http://ge.tt
-  baseURL: https://open.ge.tt//1//1/shares/{sharename}/destroy
-  tags: Shares,Sharename,Destroy
+  baseURL: https://open.ge.tt//1
+  tags: Files, Storage, File Transfer, File Sharing, File, Stack Network, Getting
+    Started Example, Mobile, Technology, internet, API Provider, Profiles, Relative
+    Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/ge-tt/master/_listings/ge-tt/1sharessharenamedestroy-post-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/ge-tt/master/_listings/ge-tt/1sharessharenamedestroy-post-openapi.md
-- name: Ge.tt  REST API Shares Update
-  x-api-slug: ge-tt--rest-api
+- name: Ge.tt  REST API - Shares Update
+  x-api-slug: 1sharessharenameupdate-post
   description: Updates a share. Currently you can only update the title
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1012-ge-tt.jpg
   humanURL: http://ge.tt
-  baseURL: https://open.ge.tt//1//1/shares/{sharename}/update
-  tags: Shares,Sharename,Update
+  baseURL: https://open.ge.tt//1
+  tags: Files, Storage, File Transfer, File Sharing, File, Stack Network, Getting
+    Started Example, Mobile, Technology, internet, API Provider, Profiles, Relative
+    Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/ge-tt/master/_listings/ge-tt/1sharessharenameupdate-post-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/ge-tt/master/_listings/ge-tt/1sharessharenameupdate-post-openapi.md
-- name: Ge.tt  REST API Users Login
-  x-api-slug: ge-tt--rest-api
+- name: Ge.tt  REST API - Users Login
+  x-api-slug: 1userslogin-post
   description: 'The API is based on oauth with an xauth handshake. The request body
     looks like this:'
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1012-ge-tt.jpg
   humanURL: http://ge.tt
-  baseURL: https://open.ge.tt//1//1/users/login
-  tags: Users,Login
+  baseURL: https://open.ge.tt//1
+  tags: Files, Storage, File Transfer, File Sharing, File, Stack Network, Getting
+    Started Example, Mobile, Technology, internet, API Provider, Profiles, Relative
+    Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/ge-tt/master/_listings/ge-tt/1userslogin-post-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/ge-tt/master/_listings/ge-tt/1userslogin-post-openapi.md
-- name: Ge.tt  REST API Users Me
-  x-api-slug: ge-tt--rest-api
+- name: Ge.tt  REST API - Users Me
+  x-api-slug: 1usersme-get
   description: 'Returns your user information:'
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1012-ge-tt.jpg
   humanURL: http://ge.tt
-  baseURL: https://open.ge.tt//1//1/users/me
-  tags: Users,Me
+  baseURL: https://open.ge.tt//1
+  tags: Files, Storage, File Transfer, File Sharing, File, Stack Network, Getting
+    Started Example, Mobile, Technology, internet, API Provider, Profiles, Relative
+    Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/ge-tt/master/_listings/ge-tt/1usersme-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/ge-tt/master/_listings/ge-tt/1usersme-get-openapi.md
-- name: Ge.tt  REST API
-  x-api-slug: ge-tt--rest-api
-  description: The Ge.tt API allows you to use Ge.tt in your own applications. We
-    believe that our users should be able to access their files and share their content
-    in their platform of choice. By using the API, developers are able to easily put
-    their own content, or the content of their users online. At the same time they
-    are able to use Ge.tts unique real-time file sharing technology where files are
-    available before they are even uploaded.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1012-ge-tt.jpg
-  humanURL: http://ge.tt
-  baseURL: https://open.ge.tt//1
-  tags: Ge.tt
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/ge-tt/master/_listings/ge-tt/openapi.md
 x-common:
 - type: x--net-library
   url: http://ge.tt/developers/csharp
+- type: x-api-gallery
+  url: http://fullcontact.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://ge.tt.stack.network
 - type: x-base
   url: http://open.ge.tt
 - type: x-blog
